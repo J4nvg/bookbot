@@ -23,10 +23,11 @@ def charCount(filename):
 
 if __name__ == "__main__":
     # readBook(FRANK)
-    print("--- Begin report of books/frankenstein.txt ---")
+    print(f"--- Begin report of {FRANK} ---")
     print(f"{countWords(FRANK)} words found in the document.\n")
     ndict = charCount(FRANK)
     keylist = list(ndict.keys())
     keylist.sort()
     for key in keylist:
         print(f"the '{key}' character was found {ndict[key]} times.\n")
+    print(f"--- End report of {FRANK} ---")
